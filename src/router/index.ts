@@ -12,6 +12,11 @@ const routes = [
         component: () => import('../views/pages/HomeView.vue')
       },
       {
+        path: 'our-users',  // Nueva ruta
+        name: 'our-users',
+        component: () => import('../views/pages/OurUsers.vue') // Asegúrate de que la ruta sea correcta
+      },
+      {
         path: 'activities',
         name: 'activities',
         component: () => import('../views/pages/DayActivities.vue')
@@ -20,6 +25,11 @@ const routes = [
         path: 'add-zones',
         name: 'add-zones',
         component: () => import('../views/pages/AddZones.vue')
+      },
+      {
+        path: 'zones',  // Nueva ruta para la tabla de zonas
+        name: 'table-zones',
+        component: () => import('../views/ref/TableZones.vue')  // Ruta de la tabla de zonas
       },
       {
         path: 'attendance',
@@ -39,7 +49,7 @@ const routes = [
       {
         path: 'overtime',
         name: 'overtime',
-        component: () => import('../views/pages/OvertimeDAY.vue')
+        component: () => import('../views/pages/OvertimeDay.vue')
       },
       {
         path: 'supplies',
